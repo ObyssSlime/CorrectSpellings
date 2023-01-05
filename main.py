@@ -1,11 +1,12 @@
 from spellchecker import SpellChecker
 
-corrector = SpellChecker()
-word = input("Enter a word: ")
+while True:
+    corrector = SpellChecker()
+    word = input("Enter a word: ")
 
-if word in corrector:
-    print("Correct")
+    if word in corrector:
+        print("Correct")
 
-else:
-    correct_word = corrector.correction(word)
-    print("Correct Spelling is", correct_word)
+    else:
+        correct_word = corrector.correction(word)
+        print("Correct Spelling is", correct_word)
